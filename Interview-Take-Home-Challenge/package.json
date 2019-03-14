@@ -1,0 +1,26 @@
+{
+  "name": "front-end-challenge",
+  "version": "1.0.0",
+  "description": "run",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-sass-middleware": "^0.11.0"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "engines": {
+    "node": "4.4.5"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "sass"
+  ],
+  "license": "MIT"
+}

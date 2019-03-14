@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BuildASign Coding Challenge</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/designer.css">
+
+</head>
+<body>
+  <!-- container for app dimensions -->
+  <div class="container">
+    <div class="cc-app">
+      <!-- overlaying edit button -->
+      <div class="edit-tab trigger">
+        <img src="assets/gear.svg">
+        <p>edit<br>size</p>
+      </div>
+      <!-- overlaying edit modal -->
+      <div class="modal">
+          <div class="modal-content">
+              <span class="close-button">&times;</span>
+              <h1>Edit Page</h1>
+          </div>
+      </div>
+
+      <!-- base UI -->
+      <!-- HEADER SECTION -->
+      <!-- header with navbar, coupon section, and button section -->
+      <div class="header">
+        <!-- navbar with navigation menu -->
+        <div class="navbar">
+          <div class="left">
+              <!-- dropdown menu -->
+              <div class="dropdown">
+                <button onclick="dropDown()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://google.com">My Greatest Teacher</a>
+                  <a href="https://linkedin.com/in/joshmontech">My linkedIn</a>
+                  <a href="https://www.buildasign.com/careers?pcode=685064464C46726835646279584B50546539674F6A2B444B5871523336545A68&gclid=CjwKCAjw96fkBRA2EiwAKZjFTfh17khtF7bjzNOW6zcNa8TkuaTuYZmj823wO9KFnLOcBRU1PTLCihoCqGcQAvD_BwE">The Job I Want!</a>
+                </div>
+              </div>
+            <div class="logo">
+              <img src="assets/logo.svg">
+            </div>
+          </div>
+          <div class="right">
+            <div class="question">
+              <img src="assets/help.svg">
+            </div>
+            <div class="cart">
+              <img src="assets/cart.svg">
+            </div>
+          </div>
+        </div>
+        <!-- coupon section -->
+        <div class="coupon">
+          <p>87% Off Canvas Prints! Click For Details</p>
+        </div>
+        <!-- buttons section -->
+        <div class="buttons">
+            <div class="edit-img">
+              <img src="assets/edit.svg">
+              <p>edit</p>
+            </div>
+            <div class="upload-img uploader">
+              <img src="assets/upload.svg">
+              <p>upload</p>
+            </div>
+            <div class="rotate-img">
+              <img src="assets/rotate.svg">
+              <p>rotate</p>
+            </div>
+            <div class="save-img">
+              <img src="assets/save.svg">
+              <p>save design</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- MAIN SECTION -->
+      <!-- main section containing designer -->
+      <div class="main">
+        <!-- designer section with starting text section and image section -->
+        <div class="designer">
+          <!-- click to upload section -->
+          <div class="designer-start uploader">
+            <!-- upload image -->
+            <div class="designer-upload">
+                <img src="assets/upload.png">
+            </div>
+            <!-- upload text -->
+            <div class="designer-text">
+                <p class="designer-text-1">click to upload image</p>
+                <p class="designer-text-2">accepted file types .jpg, .png, .gif</p>
+            </div>
+          </div>
+          <!-- image section -->
+          <div class="designer-img-container uploader">
+            <img class="designer-img" src="">
+          </div>
+        </div>
+      </div>
+      
+      <!-- FOOTER SECTION -->
+      <!-- footer section containing prices and upload button -->
+      <div class="footer">
+        <div class="prices">
+          <div class="price-primary">
+            <p>$17.60</p>
+          </div>
+          <div class="price-slashed">
+            <p>$135.35</p>
+          </div>
+        </div>
+        <div class="upload uploader">
+          <p>upload</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/index.js"></script>
+</body>
+</html>
