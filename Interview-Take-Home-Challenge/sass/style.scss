@@ -127,31 +127,30 @@ html {
   border-right: none;
   text-transform: uppercase;
   padding: 10px;
-
-}
-
-.edit-tab img {
-  height: 30px;
-}
-
-.edit-tab p {
-  margin: 0;
-  margin-top: 10px;
-  font-weight: 700;
-  font-size: 8.87px;
-  color: #505D77;
+  
+  img {
+    height: 30px;
+  }
+  
+  p {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 8.87px;
+    color: #505D77;
+  }
 }
 
 .designer-text {
   flex-direction: column;
   align-items: flex-start;
   color: #505D77;
-}
-
-.designer-text p {
-  margin: 0;
-  width: 100%;
-  text-align: center;
+  
+  p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .designer-start {
