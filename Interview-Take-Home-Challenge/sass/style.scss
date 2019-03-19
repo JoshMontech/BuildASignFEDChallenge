@@ -170,49 +170,49 @@ html {
   border-top: 1px solid var(--color-light);
   border-bottom: 1px solid var(--color-light);
   text-transform: uppercase;
-}
-
-.buttons > * {
-  color: var(--color-dark);
-  display: flex;
-  padding-top:15px;
-  padding-bottom:15px;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid var(--color-light);
-}
-
-.buttons > *:last-child {
-  border-right: none;
-}
-
-.buttons > * > img {
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.buttons > * > p {
-  margin: 0;
+  
+  * {
+    color: var(--color-dark);
+    display: flex;
+    padding-top:15px;
+    padding-bottom:15px;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--color-light);
+    
+    &:last-child {
+      border-right: none;~
+    }
+    
+    img {
+      height: 30px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      margin: 0;
+    }
+  }
 }
 
 .navbar {
   background-color: var(--color-nav);
   display: flex;
   justify-content: space-between;
-}
-
-.navbar > * {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navbar > * img {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  height: 30px;
+  
+  * {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  * img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 30px;
+  }
 }
 
 .coupon {
@@ -220,10 +220,10 @@ html {
   align-items: center;
   justify-content: center;
   background-color: var(--color-alt);
-}
-
-.coupon p {
-  color: white;
+  
+  p {
+    color: white;
+  }
 }
 
 .price-primary {
@@ -250,24 +250,24 @@ html {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.prices > * {
-  margin-left: 15px;
-}
-
-.upload p {
-  margin: 0;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 7.5px 0;
+  
+  * {
+    margin-left: 15px;
+  }
 }
 
 .upload {
   width: 50%;
   background-color: var(--color-alt);
   margin-right: 15px;
+  
+  p {
+      margin: 0;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 7.5px 0;
+  }
 }
 
 html, body {
