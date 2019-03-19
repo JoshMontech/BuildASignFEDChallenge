@@ -2,11 +2,6 @@ $break-mobile: 768px;
 // font
 @import url('https:fonts.googleapis.com/css?family=Noto+Sans:400,700');
 
-html {
-  --font-family: 'Noto Sans', sans-serif;
-  font-family: var(--font-family);
-}
-
 :root {
   // THEMES
   // dimensions
@@ -25,13 +20,7 @@ html {
   --color-alt: #E9775C;
   --color-light: #FFFFFF;
   --color-nav: #FAF6F3;
-
   
-}
-
-.designer-app {
-
-
   // sizes
   --small: 1;
   --medium: var(--small) * 1.125;
@@ -46,8 +35,19 @@ html {
   --text-md: 1em * var(--medium);
   --text-lg: 1em * var(--large);
   --text-transform: uppercase;
+  
+  // button vars
+  --image-height-sm: 26px;
+  --image-height-md: 30px;
+  --image-height-lg: 34px;
+  --image-margin-bot: 10px;
+  --navbar-padding-sm-md: 15px;
+  --navbar-padding-lg: 20px;
+  
+}
 
-  // STYLES
+html {
+  font-family: var(--font-family);
 }
 
 .cc-app {
@@ -59,6 +59,7 @@ html {
   margin: 0;
   position: relative;
 }
+
 .header {
   font-size: 8.87px;
   font-weight: 700;
@@ -97,8 +98,6 @@ html {
 }
 
 .designer {
-  --color-light: #D4D4D4;
-  
   width: 250px;
   height: 200px;
   background-color: white;
@@ -115,12 +114,7 @@ html {
  align-items: flex-end;
 }
 
-// .edit-tab p {
-//   margin: 0;
-// }
-
 .edit-tab {
-  --color-light: #D4D4D4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,14 +165,6 @@ html {
 }
 
 .buttons {
-  --color-light: #D4D4D4;
-  --image-height-sm: 26px;
-  --image-height-md: 30px;
-  --image-height-lg: 34px;
-  --image-margin-bot: 10px;
-  --navbar-padding-sm-md: 15px;
-  --navbar-padding-lg: 20px;
-  
   display: flex;
   flex: 1;
   justify-content: center;
@@ -188,8 +174,6 @@ html {
 }
 
 .buttons > * {
-  --color-light: #D4D4D4;
-  --color-dark: #505D77;
   color: var(--color-dark);
   display: flex;
   padding-top:15px;
@@ -215,7 +199,6 @@ html {
 }
 
 .navbar {
-  --color-nav: #FAF6F3;
   background-color: var(--color-nav);
   display: flex;
   justify-content: space-between;
@@ -234,8 +217,6 @@ html {
 }
 
 .coupon {
-  --color-alt: #E9775C;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,7 +228,6 @@ html {
 }
 
 .price-primary {
-  --color-alt: #E9775C;
   color: var(--color-alt);
   font-weight: 700;
   font-size: 20.26px;
@@ -260,8 +240,6 @@ html {
 }
 
 .footer {
-  --color-light: #D4D4D4;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -288,7 +266,6 @@ html {
 }
 
 .upload {
-  --color-alt: #E9775C;
   width: 50%;
   background-color: var(--color-alt);
   margin-right: 15px;
